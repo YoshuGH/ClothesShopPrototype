@@ -48,5 +48,5 @@ public class Stats : SerializableDictionaryBase<StatType, float> { } // Use a se
 
 public enum StatType
 {
-    Gold
+    Money
 }
