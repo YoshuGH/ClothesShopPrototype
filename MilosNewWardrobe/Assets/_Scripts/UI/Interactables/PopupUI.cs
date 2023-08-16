@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CircleCollider2D))]
-public class PopupUI : MonoBehaviour, IUIInteractable
+public class PopupUI : MonoBehaviour, IPoppableUI
 {
     [SerializeField] private GameObject _popupUI;
     [SerializeField] private Vector3 _offset;
@@ -21,7 +20,7 @@ public class PopupUI : MonoBehaviour, IUIInteractable
 
     public void PopUpUI()
     {
-        if(_popedUIRef == null)
+        if (_popedUIRef == null)
         {
             _popedUIRef = Instantiate(_popupUI, transform.position + _offset, Quaternion.identity, transform);
         }

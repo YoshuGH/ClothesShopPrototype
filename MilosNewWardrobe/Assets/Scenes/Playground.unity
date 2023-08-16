@@ -451,6 +451,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!1 &766017070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4025076523626627113, guid: 26f2288200762ca46a2f0872e91883c3, type: 3}
+  m_PrefabInstance: {fileID: 5523171359821559416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &766017073
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766017070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.75
 --- !u!1 &821572379
 GameObject:
   m_ObjectHideFlags: 0

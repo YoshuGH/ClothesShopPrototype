@@ -26,11 +26,19 @@ public class Interactor : MonoBehaviour
         _collider = GetComponent<Collider2D>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.gameObject.GetComponent<IUIInteractable>() != null)
+        if (collision.gameObject.GetComponent<IInteractable>() != null)
         {
-            
+            collision.gameObject.GetComponent<IPoppableUI>().PopUpUI();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<IInteractable>() != null)
+        {
+            collision.gameObject.GetComponent<IPoppableUI>().PopOutUI();
         }
     }
 
