@@ -7,7 +7,7 @@ public class InventoryObject : ScriptableObject
     [SerializeField] List<InventorySlot> _inventorySlots = new List<InventorySlot>();
     public List<InventorySlot> InventorySlots => _inventorySlots;
 
-    public void AddItem(ItemSO item, int amount)
+    public void AddItem(ItemBaseSO item, int amount)
     {
         bool hasItem = false;
         // Add amount of items in case it already exists within the inventory
@@ -26,7 +26,7 @@ public class InventoryObject : ScriptableObject
             _inventorySlots.Add(new InventorySlot(item, amount));
     }
 
-    public void RemoveItem(ItemSO _item, int _amount)
+    public void RemoveItem(ItemBaseSO _item, int _amount)
     {
         foreach (InventorySlot slot in _inventorySlots)
         {
@@ -48,10 +48,10 @@ public class InventoryObject : ScriptableObject
 [System.Serializable]
 public class InventorySlot
 {
-    public ItemSO item;
+    public ItemBaseSO item;
     public int amount;
 
-    public InventorySlot(ItemSO _item, int _amount)
+    public InventorySlot(ItemBaseSO _item, int _amount)
     {
         item = _item;
         amount = _amount;

@@ -17,7 +17,6 @@ public class StatsManager : MonoBehaviour
     void Awake()
     {
         localStats = new Dictionary<StatType, float>(statsSO.instanceStats);
-        localStats[StatType.Health] = statsSO.GetStat(StatType.MaxHealth) * ((statsSO.GetStat(StatType.Defense) != 0) ? statsSO.GetStat(StatType.Defense) : 1);
     }
 
     public float GetStat(StatType stat)

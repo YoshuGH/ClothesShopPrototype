@@ -48,16 +48,5 @@ public class Stats : SerializableDictionaryBase<StatType, float> { } // Use a se
 
 public enum StatType
 {
-    Health,
-    MaxHealth,
-    AttackSpeed,
-    MovementSpeed,
-    AttackDamage,
-    DashCooldown,
-    DashDistance,
-    DashDuration,
-    MaxDashes,
-    InventorySlots,
-    Knockback,
-    Defense
+    Gold
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 [SelectionBase]
 public class Item : MonoBehaviour
 {
-    [SerializeField] ItemSO _itemReference;
-    public ItemSO ItemReference
+    [SerializeField] ItemBaseSO _itemReference;
+    public ItemBaseSO ItemReference
     {
         get => _itemReference;
         set => _itemReference = value;
