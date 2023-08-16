@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class Test : MonoBehaviour, IInteractable
 {
-    public string test = "";
+    public Canvas shopCanvas;
+    bool toggle = false;
     public void Interact()
     {
-        Debug.Log(test);
+        
+        if(toggle)
+        {
+            shopCanvas.gameObject.SetActive(false);
+            toggle = false;
+        }
+        else
+        {
+            shopCanvas.gameObject.SetActive(true);
+            toggle = true;
+        }
     }
 }
