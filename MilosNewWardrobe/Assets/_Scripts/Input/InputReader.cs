@@ -74,12 +74,12 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions, GameInp
 
     public void OnNavigate(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnSubmit(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnConfirm(InputAction.CallbackContext context)
@@ -113,32 +113,32 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions, GameInp
 
     public void OnInventoryActionButton(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnSaveActionButton(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnResetActionButton(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnClick(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnPoint(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnRightClick(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public void OnCloseInventory(InputAction.CallbackContext context)

@@ -37,13 +37,15 @@ public class StatsManager : MonoBehaviour
         {
             localStats[stat] = newValue;
             OnStatsChanged?.Invoke(stat, localStats[stat]);
-            _onStatsChanged.RaiseEvent(stat, localStats[stat]);
+            if(_onStatsChanged != null)
+                _onStatsChanged.RaiseEvent(stat, localStats[stat]);
             return true;
         }
         else if(statsSO.SetStat(stat, newValue))
         {
             OnStatsChanged?.Invoke(stat, statsSO.GetStat(stat));
-            _onStatsChanged.RaiseEvent(stat, statsSO.GetStat(stat));
+            if (_onStatsChanged != null)
+                _onStatsChanged.RaiseEvent(stat, statsSO.GetStat(stat));
             return true;
         }
 

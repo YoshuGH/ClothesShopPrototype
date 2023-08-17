@@ -9,7 +9,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] float _interactionRadius;
 
     LayerMask _interactableLayer = 1 << 6;
-    Collider2D _collider;
+    CircleCollider2D _collider;
 
     private void OnEnable()
     {
@@ -23,9 +23,11 @@ public class Interactor : MonoBehaviour
 
     private void Start()
     {
-        _collider = GetComponent<Collider2D>();
+        _collider = GetComponent<CircleCollider2D>();
+        _collider.radius = _interactionRadius;
     }
 
+    #region Triggers
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<IInteractable>() != null)
@@ -41,6 +43,7 @@ public class Interactor : MonoBehaviour
             collision.gameObject.GetComponent<IPoppableUI>().PopOutUI();
         }
     }
+    #endregion
 
     // When the interact key is pressed
     void HandleInteract()

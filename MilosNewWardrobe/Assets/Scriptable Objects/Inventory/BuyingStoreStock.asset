@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0674d0bcfa4fa4e9fbaa925e56610e, type: 3}
+  m_Name: BuyingStoreStock
+  m_EditorClassIdentifier: 
+  _inventorySlots:
+  - item: {fileID: 11400000, guid: fc16e2d45454e3649ae88b31f8a14c50, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: acc0da25a57de87419c72f4988896d9c, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 112fb40ead380524489c4da460b31a65, type: 2}
+    amount: 1

@@ -3102,10 +3102,10 @@ TextureImporter:
       name: Modern_UI_Style_2_143
       rect:
         serializedVersion: 2
-        x: 452
-        y: 371
-        width: 8
-        height: 24
+        x: 453
+        y: 387
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3480,10 +3480,10 @@ TextureImporter:
       name: Modern_UI_Style_2_161
       rect:
         serializedVersion: 2
-        x: 455
-        y: 374
-        width: 6
-        height: 6
+        x: 452
+        y: 371
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4952,7 +4952,7 @@ TextureImporter:
         serializedVersion: 2
         x: 640
         y: 256
-        width: 144
+        width: 16
         height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -6672,10 +6672,10 @@ TextureImporter:
       name: Modern_UI_Style_2_314
       rect:
         serializedVersion: 2
-        x: 262
+        x: 268
         y: 145
-        width: 31
-        height: 26
+        width: 25
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9168,15 +9168,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_434
+      name: MUI_BasicAnimButton_1
       rect:
         serializedVersion: 2
         x: 657
         y: 32
         width: 14
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9189,16 +9189,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_435
+      name: MUI_BasicAnimButton_2
       rect:
         serializedVersion: 2
         x: 673
         y: 32
         width: 14
         height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 2, y: 3, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -10049,6 +10049,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: MUI_BtnShop_Disabled
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 256
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589c82b87cee91a4bab743500aeee258
+      internalID: -337539839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MUI_BasicAnimButton_0
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 32
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 2, y: 5, z: 2, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074ba2cd3d23ae34fb936054b6ce8a0c
+      internalID: -446531661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MUI_BtnBlankWhiteLarge
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 304
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b688ddd232473284aa3533c8167d18b7
+      internalID: 1965150239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MUI_BtnReturn
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b93ec4a1e7f5e74d9a4598d426532cd
+      internalID: -1099356019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -10060,9 +10144,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      MUI_BasicAnimButton_0: -446531661
+      MUI_BasicAnimButton_1: -1924274569
+      MUI_BasicAnimButton_2: -445939730
+      MUI_BtnBlankWhiteLarge: 1965150239
+      MUI_BtnReturn: -1099356019
       MUI_BtnShop_0: 1582771649
       MUI_BtnShop_1: 351661150
       MUI_BtnShop_2: -1226233580
+      MUI_BtnShop_Disabled: -337539839
       MUI_Cancel_0: 1123182067
       MUI_Cancel_1: 52700983
       MUI_Cancel_Small: -1803517489
@@ -10441,8 +10531,6 @@ TextureImporter:
       Modern_UI_Style_2_431: 1624680138
       Modern_UI_Style_2_432: 1495547066
       Modern_UI_Style_2_433: -986792631
-      Modern_UI_Style_2_434: -1924274569
-      Modern_UI_Style_2_435: -445939730
       Modern_UI_Style_2_436: -1822244785
       Modern_UI_Style_2_437: -429637892
       Modern_UI_Style_2_438: -667456211

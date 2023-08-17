@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1846507369728588859}
   - component: {fileID: 9189983277583522990}
+  - component: {fileID: 766017073}
   m_Layer: 0
   m_Name: Interactor
   m_TagString: Untagged
@@ -46,6 +47,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputReader: {fileID: 11400000, guid: 167f1bd860dcd434fb41c27cecd14377, type: 2}
   _interactionRadius: 0.75
+--- !u!58 &766017073
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025076523626627113}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.75
 --- !u!1 &5523171359109374893
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +76,8 @@ GameObject:
   - component: {fileID: 5523171359109374894}
   - component: {fileID: 8338093911960823248}
   - component: {fileID: 5523171359109374881}
+  - component: {fileID: 982848985}
+  - component: {fileID: 982848990}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -117,8 +136,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.6, y: 1}
+  m_Offset: {x: 0, y: -0.15}
+  m_Size: {x: 0.6, y: 0.5}
   m_Direction: 0
 --- !u!114 &8338093911960823248
 MonoBehaviour:
@@ -152,6 +171,36 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   speed: 5
+--- !u!114 &982848985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523171359109374893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d22b79a6b8939b4da0d1f01ed499629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsSO: {fileID: 11400000, guid: 5fb99ac25d4df7a45a083c4b73b8b2cb, type: 2}
+  OnStatsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  _onStatsChanged: {fileID: 0}
+--- !u!114 &982848990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523171359109374893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b43e6fc82cd7f4bb1c1482f520cad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventorySO: {fileID: 11400000, guid: eb03718dd4bfb7a479554b9badf4c5c2, type: 2}
 --- !u!1 &5523171359764243944
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6598946016331564889, guid: 23748c298f885bf4c89671f6d30f562b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
