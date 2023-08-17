@@ -82,6 +82,6 @@ public class UIMenuShop : MonoBehaviour
     {
         _pnlButtons.SetActive(false);
         _pnlShopBuy.SetActive(false);
-        //_pnlShopSell.SetActive(false);
+        _pnlShopSell.SetActive(false);
     }
 }

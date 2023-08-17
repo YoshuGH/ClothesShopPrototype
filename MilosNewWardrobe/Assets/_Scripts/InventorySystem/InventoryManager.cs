@@ -20,4 +20,14 @@ public class InventoryManager : MonoBehaviour
     {
         _inventorySO.RemoveItem(item, amount);
     }
+
+    public bool Contains(ItemBaseSO item)
+    {
+        foreach (InventorySlot slot in _inventorySO.InventorySlots)
+        {
+            if (item == slot.item) { return true; }
+        }
+
+        return false;
+    }
 }

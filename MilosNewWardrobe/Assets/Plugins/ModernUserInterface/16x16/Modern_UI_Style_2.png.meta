@@ -9195,10 +9195,10 @@ TextureImporter:
         x: 673
         y: 32
         width: 14
-        height: 14
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 2, y: 3, z: 2, w: 2}
+      border: {x: 2, y: 3, z: 2, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -10133,6 +10133,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: MUI_BasicAnimButton_Disable
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 256
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b776ee02cb24d4ca918aec9e822a82
+      internalID: -1018663039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -10147,6 +10168,7 @@ TextureImporter:
       MUI_BasicAnimButton_0: -446531661
       MUI_BasicAnimButton_1: -1924274569
       MUI_BasicAnimButton_2: -445939730
+      MUI_BasicAnimButton_Disable: -1018663039
       MUI_BtnBlankWhiteLarge: 1965150239
       MUI_BtnReturn: -1099356019
       MUI_BtnShop_0: 1582771649

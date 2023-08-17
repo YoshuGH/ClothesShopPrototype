@@ -30,6 +30,7 @@ public class BuyingShop : ShopBase
 
             // Add the item to the inventory
             playerInventoryRef.AddItem(currentClickedItem, 1);
+            UpdateItemAvailability();
         }
         else
         {
