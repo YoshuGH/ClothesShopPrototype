@@ -8,8 +8,9 @@ public class Shopkeeper : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Collider2D nearObj = Physics2D.OverlapCircle(transform.position, 1.5f);
-        if (nearObj != null && nearObj.CompareTag("Player"))
+        
+        Collider2D nearObj = Physics2D.OverlapCircle(transform.position, 1.5f, 1<<7);
+        if (nearObj.CompareTag("Player"))
         {
             if(nearObj.gameObject.GetComponent<StatsManager>() && nearObj.gameObject.GetComponent<InventoryManager>())
                 _onOpenShop?.RaiseEvent(nearObj.gameObject.GetComponent<InventoryManager>(), nearObj.gameObject.GetComponent<StatsManager>());
